@@ -1,0 +1,27 @@
+				Microsoft SQL Server 2019
+
+
+
+U MSQLSMS novi login za dole navedeni konekcioni string.
+Preko server autentikacije.
+
+  				appsettings.json
+					|
+					|
+					V
+"ConnectionStrings": {
+    "FakultetConnection":"Server=localhost;Initial Catalog=FakultetDB;User ID=FakultetAPI;Password=bojanbojan;"
+  }
+
+
+Komanda za kreiranje tabela preko Modela(klase, radi se preko Enitity Framework-a):
+
+	dotnet ef migrations add <ImeMigracije>
+	dotnet database update
+
+
+Za vracanje podataka i prijem od klijenta (DTO) AutoMapper(paket) profili za objekte folder Dtos
+
+
+
+Komande za POSTMAN(u klasi FakultetsController) iznad svake funkcije u komentaru
